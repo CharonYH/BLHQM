@@ -1,0 +1,53 @@
+{
+  "images" : [
+    {
+      "filename" : "banner_bg_yellow~iphone.png",
+      "idiom" : "iphone",
+      "resizing" : {
+        "cap-insets" : {
+          "bottom" : 179,
+          "left" : 345,
+          "right" : 345,
+          "top" : 34
+        },
+        "center" : {
+          "height" : 19,
+          "mode" : "tile",
+          "width" : 28
+        },
+        "mode" : "9-part"
+      },
+      "scale" : "1x"
+    },
+    {
+      "filename" : "banner_bg_yellow~iphone@2x.png",
+      "idiom" : "iphone",
+      "resizing" : {
+        "cap-insets" : {
+          "bottom" : 172,
+          "left" : 341,
+          "right" : 341,
+          "top" : 35
+        },
+        "center" : {
+          "height" : 20,
+          "mode" : "tile",
+          "width" : 36
+        },
+        "mode" : "9-part"
+      },
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "iphone",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "template-rendering-intent" : "original"
+  }
+}
