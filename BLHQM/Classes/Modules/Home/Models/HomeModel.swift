@@ -18,35 +18,17 @@ struct HomeModel: HandyJSON {
 
 
 struct HomeItemChildDatas: HandyJSON {
-    var aicLesson: [String:Any] = [:]
-    var cateId = 0
-    var cateType = 0
-    var count = 0
-    var detailImages = ""
-    var hasJiaoju = 0
-    var hot = 0
-    var icon: String?
-    var id = 0
     var image = ""
-    var image16x9 = ""
-    var image2 = ""
-    var image23x8 = ""
-//    var interactLesson
-//    var items
-//    var knowImages
-    var mediaType = ""
-    var memberFree = 0
-    var memberPrice = 0
-    var parentZl = 0
-    var progressNs = ""
-    var publish = 0
-    var saleTitle = ""
-    var studyCount = 0
-    var tags = ""
-    var tags2 = ""
-    var totalCount = 0
+    var image23x8 = ""      
+    var bannercover = ""
+    var count = 0           // 更新至多少集
+    var totalCount = 0      // 总共多少集
     var userProgressSum = 0
-    var video: String?
+    var desc = ""           // 描述信息
+    var subcatename = ""
+    var saleTitle = ""      // 售卖标题
+    var tags = ""           // 标签
+    var title = ""
 }
 struct HomeItemDatas: HandyJSON {
     var bannercover = ""
@@ -77,8 +59,12 @@ struct HomeItemDatas: HandyJSON {
     var tags2 = ""
     var totalCount = 0
     var userProgressSum = 0
+    var id = 0
+    var image = ""
+    var title = ""
 }
 
+/// icon_items、more_items、top_items通用的数据结构
 struct HomeItemModel: HandyJSON {
     
     var actionType = ""
@@ -128,20 +114,14 @@ struct HomeItemModel: HandyJSON {
             // 宝宝都在看 培养英语基础
         case ("XT_ZL", "BIG") :
             return .big
-            //        case ("VIDEO", "SQUARE"), ("VIDEO", "FOCUS"):
-            //            return .video
-            //        case ("VIDEO_SINGLE", "FOCUS"):
-            //            return .video_player
-            //        case ("XT_ZL", "BIG"):
-            //            return .big
             // 互动启蒙 :益智练习
         case ("INTER_LESSON", "BIG_LIST"):
             return .big_list
             // 我和恐龙交朋友 看绘本学成语
         case ("HB_BOOK", "SLIDE"):
             return .slide
-            //        case ("HB_BOOK", "SQUARE"):
-            //            return .book
+        case ("HB_BOOK", "SQUARE"):
+            return .book
             //        case ("AUDIO_CATE", "SQUARE"), ("AUDIO_CATE", "ICON"):
             //            return .store
             //        case ("AUDIO_CATE", "LIST"):
@@ -162,7 +142,7 @@ struct HomeItemModel: HandyJSON {
         case big_list
         case slide
         case video
-//        case book
+        case book
 //        case store
 //        case store_list
 //        case vip

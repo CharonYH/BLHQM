@@ -28,12 +28,11 @@ class RecHeaderItemViewCell: UICollectionViewCell {
         }
     }
     // MARK: - properties
-    private lazy var imgView: UIImageView = {
+    lazy var imgView: UIImageView = {
         let imgView = UIImageView(frame: .zero)
-        imgView.image = UIColor.lightGray.image()
         return imgView
     }()
-    private lazy var titleLbl: UILabel = {
+    lazy var titleLbl: UILabel = {
         let titleLbl = UILabel(frame: .zero)
         titleLbl.text = "学童谣"
         titleLbl.textColor = RGBColorHex(s: 0x666666)

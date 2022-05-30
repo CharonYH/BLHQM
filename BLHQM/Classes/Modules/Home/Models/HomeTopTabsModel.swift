@@ -21,10 +21,10 @@ struct HomeTopTabsModel: HandyJSON {
     var result: [TabModels] = []
     
     struct TabModels: HandyJSON {
-        var tabSlot: String = ""
-        var tabName: String = ""
-        var bannerType: String = ""
-        var backColor: String = ""
-        var tabTitle: String = ""
+        var tabSlot = ""
+        var tabName = ""
+        var bannerType = ""
+        var backColor = ""
+        var tabTitle = ""
     }
 }

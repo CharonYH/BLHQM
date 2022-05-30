@@ -21,13 +21,16 @@ extension UIImageView {
                      action: Selector?,
                      frame: CGRect ){
         self.init()
-        let tapGesture = UITapGestureRecognizer(target: target, action: action)
+        self.addGesture(gestureKind: .tap, target: target, action: action)
         image = UIImage(named: imageName)?.withRenderingMode(.alwaysOriginal)
-        addGestureRecognizer(tapGesture)
-        isUserInteractionEnabled = true
     }
-//    class func animatedImages(images: [UIImage],interval) {
-//        print("animatedImages")
-//    }
 }
 
+// MARK: - SDWebImage
+
+extension UIImageView {
+    func yh_setImage(with url: String,
+                     placeholderImage: UIImage? = nil) {
+        sd_setImage(with: .init(string: url), placeholderImage: placeholderImage)
+    }
+}

@@ -91,6 +91,20 @@ extension String {
     func substring(from: Int) -> String {
         return self[from..<self.count]
     }
+    
+    /// 截取关键字前面的（不包含关键字）
+    func prefix(_ keywords: String) -> String {
+        guard let range = range(of: keywords) else { return self }
+        let nsRange = NSRange(range, in: keywords)
+        return String(prefix(nsRange.location))
+    }
+    
+    /// 截取关键字后面的（包含关键字）
+    func suffix(_ keywords: String) -> String {
+        guard let range = range(of: keywords) else { return self }
+        let nsRange = NSRange(range, in: keywords)
+        return String(suffix(self.count - nsRange.location - nsRange.length))
+    }
 }
 
 /// 图片扩展

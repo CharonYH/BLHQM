@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		031046DD2842F86100CAD37D /* RecListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031046DC2842F86100CAD37D /* RecListViewCell.swift */; };
+		031046DF2843056500CAD37D /* RecBigViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031046DE2843056500CAD37D /* RecBigViewCell.swift */; };
 		03505F05282F9A8B001CBBAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03505F04282F9A8B001CBBAE /* AppDelegate.swift */; };
 		03505F0E282F9A8C001CBBAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03505F0D282F9A8C001CBBAE /* Assets.xcassets */; };
 		03505F11282F9A8C001CBBAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03505F0F282F9A8C001CBBAE /* LaunchScreen.storyboard */; };
@@ -33,7 +35,7 @@
 		03505F86282F9B00001CBBAE /* HomeQmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03505F68282F9B00001CBBAE /* HomeQmModel.swift */; };
 		03505F87282F9B00001CBBAE /* HomeTopTabsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03505F69282F9B00001CBBAE /* HomeTopTabsModel.swift */; };
 		03505F88282F9B00001CBBAE /* HomeDhModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03505F6A282F9B00001CBBAE /* HomeDhModel.swift */; };
-		03505F89282F9B00001CBBAE /* HomeTjModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03505F6B282F9B00001CBBAE /* HomeTjModel.swift */; };
+		03505F89282F9B00001CBBAE /* HomeBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03505F6B282F9B00001CBBAE /* HomeBaseModel.swift */; };
 		03505F8A282F9B00001CBBAE /* HomeEnglishModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03505F6C282F9B00001CBBAE /* HomeEnglishModel.swift */; };
 		03505F8B282F9B00001CBBAE /* HomeEgModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03505F6D282F9B00001CBBAE /* HomeEgModel.swift */; };
 		03505F8C282F9B00001CBBAE /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03505F6E282F9B00001CBBAE /* HomeModel.swift */; };
@@ -50,11 +52,16 @@
 		03505F99282F9B07001CBBAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03505F98282F9B07001CBBAE /* ViewController.swift */; };
 		03505F9B282F9E73001CBBAE /* ThirdLibs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03505F9A282F9E73001CBBAE /* ThirdLibs.swift */; };
 		03505FA0282FA482001CBBAE /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03505F9F282FA482001CBBAE /* R.generated.swift */; };
+		036F1771284345FF00398D59 /* RecBigListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036F1770284345FF00398D59 /* RecBigListViewCell.swift */; };
+		036F177328435EBF00398D59 /* RecSlideViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036F177228435EBF00398D59 /* RecSlideViewCell.swift */; };
+		036F1775284361A500398D59 /* RecSlideChildViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036F1774284361A500398D59 /* RecSlideChildViewCell.swift */; };
 		0370C1952833C97800BA0933 /* UIScrollView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370C1942833C97800BA0933 /* UIScrollView+Extension.swift */; };
 		037863C9283381F500427CE8 /* RecHeaderItemsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037863C8283381F500427CE8 /* RecHeaderItemsViewCell.swift */; };
 		037863CE283382D300427CE8 /* RecHeaderItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037863CD283382D300427CE8 /* RecHeaderItemViewCell.swift */; };
 		037863D02833893500427CE8 /* RecHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037863CF2833893500427CE8 /* RecHeaderView.swift */; };
 		037863D22833986600427CE8 /* RecNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037863D12833986600427CE8 /* RecNormalCell.swift */; };
+		03968F2F2842209E004B94A8 /* 方正粗圆简体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03968F2E2842209E004B94A8 /* 方正粗圆简体.ttf */; };
+		03968F30284220AB004B94A8 /* FZKTJW.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 03968F2B28421FF9004B94A8 /* FZKTJW.TTF */; };
 		03CDDC9728308FBB0097C630 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CDDC9628308FBB0097C630 /* UIViewController+Extension.swift */; };
 		03CDDC992830DB0B0097C630 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CDDC982830DB0B0097C630 /* RecommendViewController.swift */; };
 		03CDDC9C2830E59F0097C630 /* HUDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CDDC9B2830E59F0097C630 /* HUDManager.swift */; };
@@ -83,6 +90,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		031046DC2842F86100CAD37D /* RecListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecListViewCell.swift; sourceTree = "<group>"; };
+		031046DE2843056500CAD37D /* RecBigViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecBigViewCell.swift; sourceTree = "<group>"; };
 		03505F01282F9A8B001CBBAE /* BLHQM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLHQM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03505F04282F9A8B001CBBAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03505F0D282F9A8C001CBBAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -113,7 +122,7 @@
 		03505F68282F9B00001CBBAE /* HomeQmModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeQmModel.swift; sourceTree = "<group>"; };
 		03505F69282F9B00001CBBAE /* HomeTopTabsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTopTabsModel.swift; sourceTree = "<group>"; };
 		03505F6A282F9B00001CBBAE /* HomeDhModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDhModel.swift; sourceTree = "<group>"; };
-		03505F6B282F9B00001CBBAE /* HomeTjModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTjModel.swift; sourceTree = "<group>"; };
+		03505F6B282F9B00001CBBAE /* HomeBaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeBaseModel.swift; sourceTree = "<group>"; };
 		03505F6C282F9B00001CBBAE /* HomeEnglishModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeEnglishModel.swift; sourceTree = "<group>"; };
 		03505F6D282F9B00001CBBAE /* HomeEgModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeEgModel.swift; sourceTree = "<group>"; };
 		03505F6E282F9B00001CBBAE /* HomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
@@ -130,11 +139,16 @@
 		03505F98282F9B07001CBBAE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		03505F9A282F9E73001CBBAE /* ThirdLibs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdLibs.swift; sourceTree = "<group>"; };
 		03505F9F282FA482001CBBAE /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		036F1770284345FF00398D59 /* RecBigListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecBigListViewCell.swift; sourceTree = "<group>"; };
+		036F177228435EBF00398D59 /* RecSlideViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecSlideViewCell.swift; sourceTree = "<group>"; };
+		036F1774284361A500398D59 /* RecSlideChildViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecSlideChildViewCell.swift; sourceTree = "<group>"; };
 		0370C1942833C97800BA0933 /* UIScrollView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extension.swift"; sourceTree = "<group>"; };
 		037863C8283381F500427CE8 /* RecHeaderItemsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecHeaderItemsViewCell.swift; sourceTree = "<group>"; };
 		037863CD283382D300427CE8 /* RecHeaderItemViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecHeaderItemViewCell.swift; sourceTree = "<group>"; };
 		037863CF2833893500427CE8 /* RecHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecHeaderView.swift; sourceTree = "<group>"; };
 		037863D12833986600427CE8 /* RecNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecNormalCell.swift; sourceTree = "<group>"; };
+		03968F2B28421FF9004B94A8 /* FZKTJW.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = FZKTJW.TTF; sourceTree = "<group>"; };
+		03968F2E2842209E004B94A8 /* 方正粗圆简体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "方正粗圆简体.ttf"; sourceTree = "<group>"; };
 		03CDDC9628308FBB0097C630 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		03CDDC982830DB0B0097C630 /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
 		03CDDC9B2830E59F0097C630 /* HUDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDManager.swift; sourceTree = "<group>"; };
@@ -231,6 +245,7 @@
 		03505F34282F9AB5001CBBAE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				03968F2528421C03004B94A8 /* resources */,
 				03505F9F282FA482001CBBAE /* R.generated.swift */,
 				03505F9A282F9E73001CBBAE /* ThirdLibs.swift */,
 				03505F50282F9AC5001CBBAE /* DefineMacro.swift */,
@@ -406,13 +421,13 @@
 		03505F70282F9B00001CBBAE /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				03505F7F282F9B00001CBBAE /* Base */,
 				03505F71282F9B00001CBBAE /* Home */,
 				03505F73282F9B00001CBBAE /* VIP */,
 				03505F75282F9B00001CBBAE /* GrowthParadise */,
 				03505F77282F9B00001CBBAE /* Mine */,
 				03505F79282F9B00001CBBAE /* Main */,
 				03505F7D282F9B00001CBBAE /* School */,
-				03505F7F282F9B00001CBBAE /* Base */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -499,11 +514,10 @@
 		037863CB2833821D00427CE8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				03505F67282F9B00001CBBAE /* HomeHbModel.swift */,
 				03505F68282F9B00001CBBAE /* HomeQmModel.swift */,
 				03505F69282F9B00001CBBAE /* HomeTopTabsModel.swift */,
 				03505F6A282F9B00001CBBAE /* HomeDhModel.swift */,
-				03505F6B282F9B00001CBBAE /* HomeTjModel.swift */,
+				03505F6B282F9B00001CBBAE /* HomeBaseModel.swift */,
 				03505F6C282F9B00001CBBAE /* HomeEnglishModel.swift */,
 				03505F6D282F9B00001CBBAE /* HomeEgModel.swift */,
 				03505F6E282F9B00001CBBAE /* HomeModel.swift */,
@@ -518,9 +532,24 @@
 				037863C8283381F500427CE8 /* RecHeaderItemsViewCell.swift */,
 				037863CD283382D300427CE8 /* RecHeaderItemViewCell.swift */,
 				037863CF2833893500427CE8 /* RecHeaderView.swift */,
+				03505F67282F9B00001CBBAE /* HomeHbModel.swift */,
 				037863D12833986600427CE8 /* RecNormalCell.swift */,
+				031046DC2842F86100CAD37D /* RecListViewCell.swift */,
+				031046DE2843056500CAD37D /* RecBigViewCell.swift */,
+				036F1770284345FF00398D59 /* RecBigListViewCell.swift */,
+				036F177228435EBF00398D59 /* RecSlideViewCell.swift */,
+				036F1774284361A500398D59 /* RecSlideChildViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		03968F2528421C03004B94A8 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				03968F2E2842209E004B94A8 /* 方正粗圆简体.ttf */,
+				03968F2B28421FF9004B94A8 /* FZKTJW.TTF */,
+			);
+			path = resources;
 			sourceTree = "<group>";
 		};
 		03CDDC9528308FAE0097C630 /* UIViewController */ = {
@@ -681,8 +710,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03968F30284220AB004B94A8 /* FZKTJW.TTF in Resources */,
 				03505F11282F9A8C001CBBAE /* LaunchScreen.storyboard in Resources */,
 				03505F0E282F9A8C001CBBAE /* Assets.xcassets in Resources */,
+				03968F2F2842209E004B94A8 /* 方正粗圆简体.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -832,6 +863,7 @@
 				03505F9B282F9E73001CBBAE /* ThirdLibs.swift in Sources */,
 				03505F55282F9AC5001CBBAE /* UIView+Extension.swift in Sources */,
 				03505F59282F9AC5001CBBAE /* UIBezierPath+Extension.swift in Sources */,
+				036F177328435EBF00398D59 /* RecSlideViewCell.swift in Sources */,
 				03505F05282F9A8B001CBBAE /* AppDelegate.swift in Sources */,
 				037863C9283381F500427CE8 /* RecHeaderItemsViewCell.swift in Sources */,
 				03505F53282F9AC5001CBBAE /* UIButton+Extension.swift in Sources */,
@@ -847,6 +879,7 @@
 				03CDDC9C2830E59F0097C630 /* HUDManager.swift in Sources */,
 				03505F84282F9B00001CBBAE /* HomeDatasProvider.swift in Sources */,
 				03505F8F282F9B00001CBBAE /* VIPViewController.swift in Sources */,
+				036F1771284345FF00398D59 /* RecBigListViewCell.swift in Sources */,
 				03505F86282F9B00001CBBAE /* HomeQmModel.swift in Sources */,
 				03505F5C282F9AC5001CBBAE /* String+Extension.swift in Sources */,
 				03505F90282F9B00001CBBAE /* GrowthParadiseViewController.swift in Sources */,
@@ -858,9 +891,10 @@
 				03505F95282F9B00001CBBAE /* SchoolViewController.swift in Sources */,
 				03505F99282F9B07001CBBAE /* ViewController.swift in Sources */,
 				03F4ADF628337568008FCCE4 /* RecBannerViewCell.swift in Sources */,
-				03505F89282F9B00001CBBAE /* HomeTjModel.swift in Sources */,
+				03505F89282F9B00001CBBAE /* HomeBaseModel.swift in Sources */,
 				03505F56282F9AC5001CBBAE /* Array+Extension.swift in Sources */,
 				03505F83282F9B00001CBBAE /* PetRequest.swift in Sources */,
+				036F1775284361A500398D59 /* RecSlideChildViewCell.swift in Sources */,
 				03505FA0282FA482001CBBAE /* R.generated.swift in Sources */,
 				037863CE283382D300427CE8 /* RecHeaderItemViewCell.swift in Sources */,
 				03505F8B282F9B00001CBBAE /* HomeEgModel.swift in Sources */,
@@ -871,6 +905,8 @@
 				03505F8C282F9B00001CBBAE /* HomeModel.swift in Sources */,
 				03505F91282F9B00001CBBAE /* MineViewController.swift in Sources */,
 				03505F5A282F9AC5001CBBAE /* UIImageView+Extension.swift in Sources */,
+				031046DF2843056500CAD37D /* RecBigViewCell.swift in Sources */,
+				031046DD2842F86100CAD37D /* RecListViewCell.swift in Sources */,
 				037863D22833986600427CE8 /* RecNormalCell.swift in Sources */,
 				03505F52282F9AC5001CBBAE /* UILabel+Extension.swift in Sources */,
 				03505F57282F9AC5001CBBAE /* Notification+Extension.swift in Sources */,

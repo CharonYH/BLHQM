@@ -17,7 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = .init(frame: UIScreen.main.bounds)
         window?.rootViewController = MainTableViewController()
         window?.makeKeyAndVisible()
-        
         /// 配置IQKeyboardManager
         configIQKeyboard()
         return true

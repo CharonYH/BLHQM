@@ -63,8 +63,9 @@ class RecBannerViewCell: UICollectionViewCell {
         pagerView.isInfinite = true
         // 如果只有一张图片 就移除无限循环
         pagerView.removesInfiniteLoopForSingleItem = true
-        pagerView.layer.cornerRadius = 8
+        pagerView.layer.cornerRadius = 8*RATIO_WIDHT750
         pagerView.layer.masksToBounds = true
+        pagerView.itemSize = pagerView.frame.size
         // 不➕这句 效果有问题
 //        pagerView.backgroundColor = .clear
         pagerView.register(FSPagerViewCell.self, forCellWithReuseIdentifier: "\(FSPagerViewCell.self)")
@@ -102,9 +103,8 @@ extension RecBannerViewCell: FSPagerViewDataSource {
            let itme = model.data.items.first {
             bannerURL = itme.image
         }
-        cell.imageView?.contentMode = .scaleToFill
-//        cell.imageView?.kf.setImage(with: URL(string: bannerURL))
         cell.imageView?.sd_setImage(with: .init(string: bannerURL))
+//        cell.imageView?.contentMode = .scaleAspectFill
         return cell
     }
 }

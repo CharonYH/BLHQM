@@ -13,31 +13,20 @@ import MBProgressHUD
 class HomeViewController: BaseViewController {
 
     private let provider = MoyaProvider<HomeAPI>()
-    var topSegmentedTitles: [String] = []
-    var controllers: [UIViewController] = []
+    var topSegmentedTitles: [String] = ["推荐","识字启蒙","唱儿歌","看动画","读绘本","英语专区","汉语启蒙"]
+    var controllers: [RecommendViewController] = [
+        .init(from: .tj),
+        .init(from: .szqm),
+        .init(from: .eg),
+        .init(from: .dh),
+        .init(from: .hb),
+        .init(from: .english),
+        .init(from: .hyqm)]
     override func viewDidLoad() {
         super.viewDidLoad()
-        requestData()
-
+        initUI()
     }
-    // MARK: - load data
-    private func requestData() {
-        MBProgressHUD.showAdded(to: view, animated: true)
-        //首页上面tabs
-       provider.send(.topTabs, modelType: HomeTopTabsModel.self) {[weak self] topTitleModel in
-           if let topTitleModel = topTitleModel {
-               guard let self = self else { return }
-               //
-               self.topSegmentedTitles = topTitleModel.result.map { $0.tabTitle}
 
-               for _ in 0..<self.topSegmentedTitles.count {
-                   self.controllers.append(RecommendViewController())
-               }
-               self.initUI()
-               MBProgressHUD.hide(for: self.view, animated: true)
-           }
-       }
-    }
     // MARK: initUI
     private func initUI() {
         view.addSubview(segmentedView)
@@ -108,6 +97,6 @@ extension HomeViewController: JXSegmentedListContainerViewDataSource {
     }
     
     func listContainerView(_ listContainerView: JXSegmentedListContainerView, initListAt index: Int) -> JXSegmentedListContainerViewListDelegate {
-        return controllers[index] as! JXSegmentedListContainerViewListDelegate
+        return controllers[index] as JXSegmentedListContainerViewListDelegate
     }
 }

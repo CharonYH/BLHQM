@@ -19,11 +19,15 @@ class RecHeaderItemsViewCell: UICollectionViewCell {
         super.init(coder: coder)
     }
     
+    // MARK: 数据相关
+    var items: [HomeItemModel] = [] {
+        didSet {
+            collectionView.reloadData()
+        }
+    }
     // MARK: - properties
     private lazy var collectionView: UICollectionView = {
         let flowLayout = UICollectionViewFlowLayout()
-        let itemWidth = (KScreenWidth - 16 * 2 - 25 * 4) / 5
-        flowLayout.itemSize = .init(width: itemWidth, height: itemWidth + 25)
         flowLayout.minimumLineSpacing = 0
         flowLayout.minimumInteritemSpacing = 25
 
@@ -47,16 +51,25 @@ extension RecHeaderItemsViewCell: UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(RecHeaderItemViewCell.self)", for: indexPath) as? RecHeaderItemViewCell else {
             return defaultCell
         }
-        cell.backgroundColor = RandomColor()
+        let model =  items[indexPath.row]
+        cell.imgView.yh_setImage(with: model.viewP.iconUrl)
+        cell.titleLbl.text = model.title
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return items.count
     }
+}
+
+extension RecHeaderItemsViewCell: UICollectionViewDelegate {
     
 }
 
-extension RecHeaderItemsViewCell: UICollectionViewDelegate{
-    
+extension RecHeaderItemsViewCell: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let itemCount = items.count
+        let itemWidth = (Int(KScreenWidth) - 16 * 2 - 25 * (itemCount)) / itemCount
+        return .init(width: itemWidth, height: itemWidth + 25)
+    }
 }
