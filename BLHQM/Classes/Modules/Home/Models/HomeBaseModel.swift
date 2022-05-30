@@ -8,7 +8,7 @@
 import UIKit
 
 /// 首页推荐
-struct HomeTjModel: HandyJSON {
+struct HomeBaseModel: HandyJSON {
     var errorMessage: String = ""
     var errorCode: Int = -1
     var result: HomeModel?
